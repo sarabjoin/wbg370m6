@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>FPS</title>
+    <link rel="stylesheet" type="text/css" href="game.css" />
+</head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <canvas id="minimap"></canvas>
+    <img id="camera" src="camera.png">
+    <div id="screenshot-wrapper"><canvas id="screenshot"></canvas></div>
+    <div id="instructions-wrapper">
+      <h1><bold>Sara's Game</bold></h1>
+      <div id="instructions">
+        <h2>How to play: </h2>
+        <p>Use arrow keys to move and space bar to take a picture</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="filtrr2.js"></script>
+    <script type="text/javascript" src="jaws.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <script>
+      jaws.assets.add(["dino.png"])
+      jaws.start(Game);
+    </script>
+  </body>
+</html>
